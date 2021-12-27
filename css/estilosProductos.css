@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+.contPrincipal{
+    background-color: rgb(65, 128, 211);
+    /* grid-template-areas: "carac1" "carac2" "carac3" 
+    "carac4" "carac5"; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4,200px);
+    gap: 10px;
+    padding: 5%;
+    width: 100%;
+    height: auto;
+}
+.prod{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    min-height: 200px;  
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.prod h4{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.contPrincipal img{
+    height: 60%;
+    width: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 8%;
+}
+.contPrincipal .linkShoppingCart{
+    margin-left: 35%;
+}
+@media only screen and (min-width:550px) and (max-width:650px) {
+    .contPrincipal{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3,200px);
+    }
+}
+@media only screen and (min-width:651px) and (max-width:850px) {
+    .contPrincipal{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3,200px);
+    }
+    .contPrincipal img{
+        height: 60%;
+        width: auto;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-left: 18%;
+    }
+    .contPrincipal .linkShoppingCart{
+        margin-left: 40%;
+    }
+}
+@media only screen and (min-width:851px) and (max-width:999px) {
+    .contPrincipal{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3,200px);
+    }
+    .contPrincipal img{
+        height: 60%;
+        width: auto;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-left: 25%;
+    }
+    .contPrincipal .linkShoppingCart{
+        margin-left: 40%;
+    }
+}
+@media only screen and (min-width:1000px) {
+
+    .contPrincipal{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,350px);
+    }
+    .prod h4{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .contPrincipal img{
+        height: 150px;
+        width: auto;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-left: 20%;
+    }
+    .contPrincipal .linkShoppingCart{
+        margin-left: 40%;
+    }
+}
+
+
+
+/* .titulo{
+    font-size: 4rem;
+    color:green;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.tabla{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.tabla td{
+    padding: 2rem;
+    border: 2px solid blue;
+    font-size:1rem;
+}
+.tabla th{
+    font-weight: bold;
+    font-size:1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: 2px solid blueviolet;
+} */
+
+/*cellspacing="10 px" cellpadding="10 px" border="1"*/
