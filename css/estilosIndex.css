@@ -5,7 +5,7 @@ body{
     width:100%;
 }
 .contPrincipal{
-    background-color: rgb(65, 128, 211);
+    background-image: linear-gradient(to bottom, #475DA7, #5383BA, white);
     /* grid-template-areas: "carac1" "carac2" "carac3" 
     "carac4" "carac5"; */
     display: grid;

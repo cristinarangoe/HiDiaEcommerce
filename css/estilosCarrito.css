@@ -1,5 +1,4 @@
-
-.ContPrincipal img{
+.contPrincipal img{
     display: grid;
     width: 300px;
     height:auto;
@@ -8,11 +7,11 @@
     border-radius: 20px;
     margin-left: 3rem;
     margin-bottom: 1.5rem;
-    transform: skewx(30deg);
+    transform: rotate(50deg);
 }
 
 @media only screen and (min-width: 660px){
-    .ContPrincipal img{
+    .contPrincipal img{
         width: 500px;
         padding: 4rem;
         margin-bottom: 3rem;

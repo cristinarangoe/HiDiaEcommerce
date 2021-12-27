@@ -36,6 +36,7 @@
 .contPrincipal .linkShoppingCart{
     margin-left: 35%;
 }
+
 @media only screen and (min-width:550px) and (max-width:650px) {
     .contPrincipal{
         grid-template-columns: 1fr 1fr 1fr;
@@ -74,6 +75,7 @@
         margin-left: 40%;
     }
 }
+
 @media only screen and (min-width:1000px) {
 
     .contPrincipal{
@@ -93,6 +95,13 @@
     }
     .contPrincipal .linkShoppingCart{
         margin-left: 40%;
+    }
+    #img{
+        transition: height 2s, width 2s;
+    }
+    #img:hover{
+        height: 300px;
+        width: auto;
     }
 }
 
