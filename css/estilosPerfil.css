@@ -1,14 +1,14 @@
 
 .ContPrincipal img{
     display: grid;
-    width: 300px;
+    width: 200px;
     height:auto;
     padding: 1rem;
     border: 1px solid red;
     border-radius: 20px;
     margin-left: 3rem;
     margin-bottom: 1.5rem;
-    transform: skewx(30deg);
+    transform: skewx(25deg);
 }
 
 @media only screen and (min-width: 660px){
