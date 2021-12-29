@@ -62,13 +62,14 @@ header{
 
 .footer{
     background-color: #475DA7;
-    display: flex;
+    color: white;
+    /* display: flex;
     width: 100%;
     height: auto;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1.5rem; */
 }
-.divLeft{
+/* .divLeft{
     width: 32%;
 }
 
@@ -118,7 +119,7 @@ header{
 }
 .divRight li{
     padding-top: 0.2rem;
-}
+} */
 /* @media only screen and (min-width:723px) and (max-width:809px) {
     .navbar{
         height: 6.563rem;
@@ -184,7 +185,7 @@ header{
         margin: 0.625rem;
     }
 } */
-@media only screen and (min-width:1000px) {
+/* @media only screen and (min-width:1000px) { */
     /* .navbar{
         height: 6.563rem;
     }
@@ -218,7 +219,7 @@ header{
     } */
     /*--------------------fin navbar---------------------------*/
     /*--------------------Inicio Footer---------------------------*/
-    .footer{
+    /* .footer{
         height: 16.75rem;
         padding-top: 4rem;
     }
@@ -252,5 +253,6 @@ header{
     }
     .FooterRightListUl{
         font-size: 1.5rem;
-    }
-}
+    } */
+/*     
+} */
