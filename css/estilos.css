@@ -46,21 +46,10 @@ header{
     flex-wrap: wrap;
 } */
 
-.linkShoppingCart{
+.btn{
     background-color: #475DA7;
-    border-radius: 0.5rem;
-    margin-left: 1rem;
-    display: inline-block;
-    /* margin-right: 1rem; */
-    height: 2rem;
-    width: 2rem;
-    /* display: block; */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
 }
-.linkShoppingCart .iconify{
+.btn .iconify{
     height: 1.2rem;
     width: 1.2rem;
     color: white;
@@ -69,6 +58,8 @@ header{
     justify-content: center;
     align-items: center;
 }
+
+
 .footer{
     background-color: #475DA7;
     display: flex;
@@ -132,7 +123,6 @@ header{
     .navbar{
         height: 6.563rem;
     }
-
     .divLogo{
         margin-left: 1.563rem;
         width:10%
@@ -140,7 +130,6 @@ header{
     .divLogo .imgLogo{
         width: 7rem;
     }
-
     .listPagesNavBar{
         display: flex;
     }
@@ -199,25 +188,25 @@ header{
     /* .navbar{
         height: 6.563rem;
     }
-
     .divLogo{
         margin-left: 1.563rem;
         width:10%
     }
     .divLogo .imgLogo{
         width: 7rem;
-    }
-    .listPagesNavBar{
+    } */
+    /*Lista de la barra de navegacion con shopping cart*/
+    /* .listPagesNavBar{
         display: flex;
-    }
-    .listPagesNavBar ul{
+    } */
+    /* .listPagesNavBar ul{
         font-size: 1.5rem;
         display: flex;
-    }
-    .listPagesNavBar .ulNavBar a{
+    } */
+    /* .listPagesNavBar .ulNavBar a{
         padding-right: 2.5rem;
-    }
-    .linkShoppingCart{
+    } */
+    /* .linkShoppingCart{
         margin-right: 1.563rem;
         height: 3.125rem;
         width: 3.125rem;
