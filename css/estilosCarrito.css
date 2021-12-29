@@ -1,4 +1,4 @@
-.contPrincipal img{
+/* .contPrincipal img{
     margin-top: 20%;
     display: grid;
     width: 220px;
@@ -21,4 +21,8 @@
         padding: 4rem;
         margin-bottom: 3rem;
     }
+} */
+.container img{
+    width: 60%;
+    height: auto;
 }

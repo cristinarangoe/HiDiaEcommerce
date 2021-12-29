@@ -1,5 +1,5 @@
 
-.ContPrincipal img{
+/* .ContPrincipal img{
     display: grid;
     width: 200px;
     height:auto;
@@ -17,4 +17,9 @@
         padding: 4rem;
         margin-bottom: 3rem;
     }
+} */
+
+.container img{
+    width: 60%;
+    height: auto;
 }

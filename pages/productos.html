@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="stylesheet" href="../css/estilosProductos.css" />
     <title>Document</title>
 </head>
 <body>
     <header class="header">
-        <nav class="navbar">
+        <!-- <nav class="navbar">
             <div class="divLogo">
                 <a href="../index.html">
                     <img class="imgLogo" src="../img/Logo.png" height="40" width="40" />
@@ -28,36 +29,31 @@
                     <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
                 </a>
             </div>
+        </nav> -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <!-- Brand -->
+            <a class="navbar-brand" href="../index.html">
+                <img class="imgLogo" src="../img/Logo.png" />
+            </a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse listPagesNavBar" id="collapsibleNavbar">
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item"><a class="nav-link" href="../index.html" >Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html" >Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./productos.html" >Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./perfil.html" >Perfil/Registro</a></li>
+                </ul>
+                <a class="linkShoppingCart " href="./carrito.html">
+                    <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
+                </a>
+            </div>
         </nav>
     </header>
-    <div class="contPrincipal">
-        <!-- <h2 class="titulo">Productos</h2>
-        <table border="1"  class="tabla"> 
-            <tr class="rowsTable">
-                <th>Arepas</th>
-                <th>Cárnicos</th>
-                <th>Salsas</th>
-                <th>Preparados</th>
-                <th>Mexicano</th>
-                <th>Desayuno</th>
-            </tr>
-            <tr>
-                <td>Blancas</td>
-                <td>Hamburguesas</td>
-                <td>Guacamole</td>
-                <td>Choripan</td>
-                <td>Bowl</td>
-                <td>Torta carne</td>
-            </tr>
-            <tr>
-                <td>Chocolo</td>
-                <td>Chorizo</td>
-                <td>Pimenton</td>
-                <td>Arepa pollo</td>
-                <td>Tacos</td>
-                <td>Queso</td>
-            </tr>
-        </table> -->
+    <!-- <div class="contPrincipal">
             <div class="prod prod1">
                 <h4>Producto1</h4>
                 <img src="../img/platoMexicano.png"id="img"/>
@@ -115,7 +111,85 @@
                     <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
                 </a>
         </div>
+    </div> -->
+    <div class="container containerMargin">
+        <div class="row">
+            <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h4 class="card-title">Producto 1</h4>
+                    <img class="card-img-top" src="../img/platoMexicano.png" alt="Card image cap">
+                    <a class="btn btn-default" href="#">
+                        <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h4 class="card-title">Producto 2</h4>
+                    <img class="card-img-top" src="../img/platoMexicano.png" alt="Card image cap">
+                    <a class="btn btn-default" href="#">
+                        <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h4 class="card-title">Producto 3</h4>
+                    <img class="card-img-top" src="../img/platoMexicano.png" alt="Card image cap">
+                    <a class="btn btn-default" href="#">
+                        <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h4 class="card-title">Producto 4</h4>
+                    <img class="card-img-top" src="../img/platoMexicano.png" alt="Card image cap">
+                    <a class="btn btn-default" href="#">
+                        <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h4 class="card-title">Producto 5</h4>
+                    <img class="card-img-top" src="../img/platoMexicano.png" alt="Card image cap">
+                    <a class="btn btn-default" href="#">
+                        <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h4 class="card-title">Producto 6</h4>
+                    <img class="card-img-top" src="../img/platoMexicano.png" alt="Card image cap">
+                    <a class="btn btn-default" href="#">
+                        <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h4 class="card-title">Producto 7</h4>
+                    <img class="card-img-top" src="../img/platoMexicano.png" alt="Card image cap">
+                    <a class="btn btn-default" href="#">
+                        <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h4 class="card-title">Producto 8</h4>
+                    <img class="card-img-top" src="../img/platoMexicano.png" alt="Card image cap">
+                    <a class="btn btn-default" href="#">
+                        <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
+
+    
     <footer class="footer">
         <div class="divLeft">
             <ul type="none" class="FooterLeftListUl">
@@ -152,6 +226,9 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>
 
