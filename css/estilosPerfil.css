@@ -1,25 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 
-/* .ContPrincipal img{
-    display: grid;
-    width: 200px;
-    height:auto;
-    padding: 1rem;
-    border: 1px solid red;
+.divIzq{
+    background-color: #475DA7;
     border-radius: 20px;
-    margin-left: 3rem;
-    margin-bottom: 1.5rem;
-    transform: skewx(25deg);
+    margin-bottom: 5%;
+}
+.contIzq{
+    margin-left: 4%;
+    margin-top: 8%;
+    margin-right: 4%;
+    color: white;
+}
+.contIzq h2{
+    margin-bottom: 3%;
+    text-align: center;
+}
+.contIzq button{
+    margin-top: 3%;
+    align-content: center;
+    margin-bottom: 3%;
+}
+.divDer{
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid rgb(230, 230, 230);
+    margin-bottom: 5%;
+}
+.contDer{
+    margin-left: 4%;
+    margin-top: 8%;
+    margin-right: 4%;
+}
+.contDer h2{
+    margin-bottom: 3%;
+    text-align: center;
+}
+.contDer button{
+    margin-top: 3%;
+}
+.jumbotron{
+    background-color: #475DA7;
+}
+.btn-blanco{
+    border: 2px solid #475DA7;
+    color:#475DA7;
+    background-color: white;
 }
 
-@media only screen and (min-width: 660px){
-    .ContPrincipal img{
-        width: 500px;
-        padding: 4rem;
-        margin-bottom: 3rem;
-    }
-} */
-
-.container img{
-    width: 60%;
-    height: auto;
-}

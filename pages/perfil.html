@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="stylesheet" href="../css/estilosPerfil.css" />
     <title>Document</title>
 </head>
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-md justify-content-between">
             <!-- Brand -->
             <a class="navbar-brand" href="../index.html">
                 <img class="imgLogo" src="../img/Logo.png" />
@@ -22,22 +23,67 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Navbar links -->
-            <div class="collapse navbar-collapse listPagsNavBar" id="collapsibleNavbar">
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav navbar-right">
-                    <li class="nav-item"><a class="nav-link" href="../index.html" >Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contacto.html" >Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./productos.html" >Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./perfil.html" >Perfil/Registro</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Productos
+                        </a>
+                        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                            <a class="dropdown-item" href="./productos.html">Arepas</a>
+                            <a class="dropdown-item" href="./productos.html">Carnicos</a>
+                            <a class="dropdown-item" href="./productos.html">Salsas</a>
+                            <a class="dropdown-item" href="./productos.html">Preparados</a>
+                            <a class="dropdown-item" href="./productos.html">Mexicano</a>
+                            <a class="dropdown-item" href="./productos.html">Desayunos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./perfil.html">Perfil/Registro</a>
+                    </li>
                 </ul>
-                <a class="btn btn-default" href="./carrito.html">
-                    <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
-                </a>
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <li class="nav-item avatar">
+                        <a type="button" class="btn btn-azul" href="./carrito.html">
+                            <i class="fa fa-cart-plus"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
     <div class="container">
-        <img src="../img/platoMexicano.png" class="img-thumbnail">
-        <img src="../img/nachos.jpg" class="img-fluid" >
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 divIzq">
+                <div class="contIzq">
+                    <h2>¿Aun no tienes cuenta?</h2>
+                    <p>Crea una ingresando tus datos personales para que puedas hacer pedidos a Hi Dia.</p>
+                    <button type="button" class="btn btn-blanco">Registrar</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 divDer">
+                <div class="contDer">
+                    <h2>Inicia sesión:</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="correo">Correo electrónico:</label>
+                            <input type = "email"  name="correo" id="correo" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="contrasena">Contraseña</label>
+                            <input type = "password" id="contrasena"name="contrasena" id="contrasena" class="form-control">
+                            <button type="button" class="btn btn-azul">Ingresar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="footer">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
