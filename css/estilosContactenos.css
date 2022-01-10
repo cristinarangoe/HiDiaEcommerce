@@ -1,19 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 
-.divForm h2,h4{
+.tituloContactenos{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.btn-azul{
+    background-color: #475DA7;
+    color: white;
+}
+.card {
+    margin-top: 3%;
+}
+.card i{
+    margin-top: 3%;
+    font-size:4rem;
+}
+.card span{
+    color: #F6D42E;
+}
+.container h2,h4{
     text-align: center;
     /* padding-top: 0.8rem;
     padding-left: 1rem;
     padding-right: 1rem; */
 }
-.divForm h2{
+.container h2{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    margin-top: 3%;
+    margin-bottom: 1%;
     /* font-size: 1.8rem; */
 }
-.divForm h4{
+.container h4{
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
+    margin-bottom: 3%;
     /* font-size: 1rem; */
 }
 .buttonSubmit{
@@ -21,71 +42,4 @@
     background-color: #475DA7;
     color: white;
 }
-/* .form{
-    border: 4px solid #475DA7;
-    width: 50%;
-    margin-left: 25%;
-    box-shadow: 0 0 20px  rgb(203, 228, 252);
-    margin-bottom: 5%;
-    margin-top: 2%;
-    justify-content: center;
-}
-.form label{
-    padding-left: 2rem;
-    display: block;
-    font-size: 0.8rem;
-    font-family: 'Raleway', sans-serif;
-}
-.form input,textarea,select{
-    padding-left: 2rem;
-    background-color: rgb(241, 237, 237);
-    border: 1px solid #475DA7;
-    width: 80%;
-    padding: 4px;
-    margin: 4px 0;
-    display: block;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-left: 1rem;
-}
-.form label[for=nombre1]{
-    padding-top: 1rem;
-}
-.form input[type=submit]{
-    margin-bottom: 1rem;
-    background-color: #475DA7;
-    width:50%;
-    margin-left: 25%;
-    color:white;
-    font-size: 1.2rem;
-}
-input{
-    transition: all 2s;
-}
-input:focus{
-    font-size: 2rem;
-    color: red;
-}
-.form input[type=submit]:hover{
-    color: black;
-    transform: scale(1.5);
-}
 
-
-@media only screen and (min-width:800px) {
-    .divForm h2{
-        font-size: 2.2rem;
-    }
-    .divForm h4{
-        font-size: 1.2rem;
-    }
-    .form label{
-        font-size: 1.1rem;
-    }
-    .form input,textarea,select{
-        padding: 8px;
-        margin: 8px 0;
-        margin-left: 2rem;
-    }
-
-} */

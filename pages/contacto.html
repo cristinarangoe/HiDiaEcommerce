@@ -8,6 +8,7 @@
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="stylesheet" href="../css/estilosContactenos.css" />
     <title>Document</title>
@@ -15,7 +16,7 @@
 
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-md justify-content-between">
             <!-- Brand -->
             <a class="navbar-brand" href="../index.html">
                 <img class="imgLogo" src="../img/Logo.png" />
@@ -25,63 +26,124 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Navbar links -->
-            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav navbar-right">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./perfil.html">Perfil/Registro</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Productos
+                        </a>
+                        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                            <a class="dropdown-item" href="./productos.html">Arepas</a>
+                            <a class="dropdown-item" href="./productos.html">Carnicos</a>
+                            <a class="dropdown-item" href="./productos.html">Salsas</a>
+                            <a class="dropdown-item" href="./productos.html">Preparados</a>
+                            <a class="dropdown-item" href="./productos.html">Mexicano</a>
+                            <a class="dropdown-item" href="./productos.html">Desayunos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./perfil.html">Perfil/Registro</a>
+                    </li>
                 </ul>
-                <a class="btn btn-default" href="./carrito.html">
-                    <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
-                </a>
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <li class="nav-item avatar">
+                        <a type="button" class="btn btn-azul" href="./carrito.html">
+                            <i class="fa fa-cart-plus"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
-    <div class="divForm">
-        <h2>Formulario contáctenos:</h2>
-        <h4>Llena el siguiente formulario y nos pondremos en contacto contigo.</h4>
-        <form class="container">
-            <div class="form-group">
-                <label for="nombre1">Primer nombre:</label>
-                <input type = "text"  name="nombre1" id="nombre1" class="form-control">
+    <div class="container">
+        <div class="">
+            <div class="row justify-content-center tituloContactenos">
+                <h2>Ponte en contacto:</h2>
+                <h4>
+                    Puedes realizar pedidos, resolver dudas sobre nuestros productos o cualquier otra solicitud que tengas, uno de nuestros asesores te ayudara
+                </h4>
             </div>
-            <div class="form-group">
-                <label for="nombre2">Segundo nombre:</label>
-                <input type = "text" id="nombre2"name="nombre2" id="nombre2" class="form-control">
+            <div class="row justify-content-center">
+                <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card text-black text-center">
+                        <div class="">
+                            <i class="fa fa-whatsapp"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="justify-content-center">
+                                <h5 class="card-title">Escribenos por <span>whatsapp</span>.</h5>
+                                <button type="button" class="btn btn-azul">Whatsapp ></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card text-black text-center">
+                        <div class="">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="justify-content-center">
+                                <h5 class="card-title"><span>Llamanos</span> a nuestra planta.</h5>
+                                <button type="button" class="btn btn-azul">6043876525</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="apellido1">Primer apellido:</label>
-                <input type = "text"  name="apellido1" id="apellido1" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="apellido2">Segundo apellido:</label>
-                <input type = "text" id="apellido2"name="apellido2" id="apellido2" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="email">Correo eléctronico:</label>
-                <input type = "email" id="email"name="email" id="email" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="telefono">Telefono celular:</label>
-                <input type = "number" id="telefono"name="telefono" id="telefono" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="fecha">Fecha del pedido:</label>
-                <input type = "date" id="fecha"name="fecha" id="fecha" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="escrito">Escribe que quisieras decirnos</label>
-                <textarea type = "text" id="escrito"name="escrito" id="escrito" class="form-control"></textarea>
-            </div>
-            <div class="checkbox">
-                <label for="check">Volverias a hacer un pedido a hi dia:</label>
-                <input type = "checkbox" id="check"name="check" id="check">
-            </div>
-            <button type="submit" class="btn btn-default buttonSubmit">Enviar</button>
-            <br>
-        </form>
+        </div>
+        <div class="divForm ">
+            <h2>Formulario contáctenos:</h2>
+            <h4>Llena el siguiente formulario y nos pondremos en contacto contigo.</h4>
+            <form>
+                <div class="form-group">
+                    <label for="nombre1">Primer nombre:</label>
+                    <input type = "text"  name="nombre1" id="nombre1" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="nombre2">Segundo nombre:</label>
+                    <input type = "text" id="nombre2"name="nombre2" id="nombre2" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="apellido1">Primer apellido:</label>
+                    <input type = "text"  name="apellido1" id="apellido1" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="apellido2">Segundo apellido:</label>
+                    <input type = "text" id="apellido2"name="apellido2" id="apellido2" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo eléctronico:</label>
+                    <input type = "email" id="email"name="email" id="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Telefono celular:</label>
+                    <input type = "number" id="telefono"name="telefono" id="telefono" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha del pedido:</label>
+                    <input type = "date" id="fecha"name="fecha" id="fecha" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="escrito">Escribe que quisieras decirnos</label>
+                    <textarea type = "text" id="escrito"name="escrito" id="escrito" class="form-control"></textarea>
+                </div>
+                <div class="checkbox">
+                    <label for="check">Volverias a hacer un pedido a hi dia:</label>
+                    <input type = "checkbox" id="check"name="check" id="check">
+                </div>
+                <button type="submit" class="btn btn-default buttonSubmit">Enviar</button>
+                <br>
+            </form>
+        </div>
     </div>
+
     <footer class="footer">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
 
