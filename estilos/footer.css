@@ -1,0 +1,114 @@
+.footer {
+  background-color: #475DA7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+}
+
+.divLeft {
+  width: 32%;
+}
+
+.divLeft a {
+  text-decoration: none;
+}
+
+.divLeft li {
+  padding-top: 0.2rem;
+}
+
+.FooterLeftListUl {
+  font-size: 0.9rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+.divMiddle {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  width: 36%;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.divMiddle .redesSociales {
+  padding-top: 1rem;
+}
+
+.divMiddle .iconify {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.divMiddle h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.divRight {
+  width: 32%;
+}
+
+.divRight a {
+  text-decoration: none;
+}
+
+.divRight li {
+  padding-top: 0.2rem;
+}
+
+.FooterRightListUl {
+  font-size: 0.9rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+@media only screen and (min-width: 1000px) {
+  /*--------------------Inicio Footer---------------------------*/
+  .footer {
+    height: 16.75rem;
+    padding-top: 4rem;
+  }
+  .divLeft {
+    padding-left: 9rem;
+  }
+  .FooterLeftListUl {
+    font-size: 1.5rem;
+  }
+  .divMiddle {
+    margin-right: 8rem;
+    margin-left: 8rem;
+  }
+  .divMiddle .redesSociales {
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  .divMiddle .redesSociales a {
+    margin-right: 0.8rem;
+  }
+  .divMiddle .iconify {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+  .divMiddle .divMiddle h3 {
+    font-size: 1.875rem;
+  }
+  .divRight {
+    margin-left: 8rem;
+  }
+  .FooterRightListUl {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

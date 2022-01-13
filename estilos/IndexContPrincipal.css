@@ -1,0 +1,73 @@
+.contPrincipal {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#475DA7), color-stop(#5383BA), to(white));
+  background-image: linear-gradient(to bottom, #475DA7, #5383BA, white);
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  padding: 5%;
+  width: 100%;
+  height: auto;
+}
+
+.contPrincipal .iconify {
+  height: 40%;
+  width: auto;
+  padding-left: 38%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.carac {
+  background-color: white;
+  border: 1px solid blue;
+  border-radius: 0.5rem;
+  min-height: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.carac h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.carac p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 949px) {
+  .contPrincipal {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: (200px)[3];
+        grid-template-rows: repeat(3, 200px);
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .contPrincipal {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (200px)[2];
+        grid-template-rows: repeat(2, 200px);
+  }
+  .contPrincipal .iconify {
+    height: 40%;
+    width: auto;
+    padding-left: 40%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+/*# sourceMappingURL=IndexContPrincipal.css.map */
