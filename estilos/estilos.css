@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  width: 100vw;
+}
+
+.footer {
+  background-color: #475DA7;
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.divLeft {
+  width: 32%;
+}
+.divLeft a {
+  text-decoration: none;
+}
+.divLeft li {
+  padding-top: 0.2rem;
+}
+
+.FooterLeftListUl {
+  font-size: 0.9rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+.divMiddle {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  width: 36%;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  justify-content: center;
+}
+.divMiddle .redesSociales {
+  padding-top: 1rem;
+}
+.divMiddle .iconify {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.divMiddle h3 {
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.divRight {
+  width: 32%;
+}
+.divRight a {
+  text-decoration: none;
+}
+.divRight li {
+  padding-top: 0.2rem;
+}
+
+.FooterRightListUl {
+  font-size: 0.9rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+@media only screen and (min-width: 1000px) {
+  /*--------------------Inicio Footer---------------------------*/
+  .footer {
+    height: 16.75rem;
+    padding-top: 4rem;
+  }
+
+  .divLeft {
+    padding-left: 9rem;
+  }
+
+  .FooterLeftListUl {
+    font-size: 1.5rem;
+  }
+
+  .divMiddle {
+    margin-right: 8rem;
+    margin-left: 8rem;
+  }
+  .divMiddle .redesSociales {
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  .divMiddle .redesSociales a {
+    margin-right: 0.8rem;
+  }
+  .divMiddle .iconify {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+  .divMiddle .divMiddle h3 {
+    font-size: 1.875rem;
+  }
+
+  .divRight {
+    margin-left: 8rem;
+  }
+
+  .FooterRightListUl {
+    font-size: 1.5rem;
+  }
+}
+.navbar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.divLogo {
+  margin-left: 1rem;
+  width: auto;
+}
+.divLogo .imgLogo {
+  height: 100%;
+  width: 4rem;
+}
+
+.listPagesNavBar {
+  width: 90%;
+  display: grid;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  grid-template-columns: auto 20%;
+}
+.listPagesNavBar ul {
+  font-size: 0.9rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: black;
+  display: block;
+}
+.listPagesNavBar .ulNavBar a {
+  text-decoration: none;
+  padding-right: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.linkShoppingCart {
+  background-color: #475DA7;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  height: 2rem;
+  width: 2rem;
+  display: block;
+}
+.linkShoppingCart .iconify {
+  height: 1.2rem;
+  width: 1.2rem;
+  color: white;
+  margin: 0.4rem;
+}
+
+@media only screen and (min-width: 723px) and (max-width: 809px) {
+  .navbar {
+    height: 6.563rem;
+  }
+
+  /*logo de la barra de navegacion*/
+  .divLogo {
+    margin-left: 1.563rem;
+    width: 10%;
+  }
+  .divLogo .imgLogo {
+    width: 7rem;
+  }
+
+  /*Lista de la barra de navegacion con shopping cart*/
+  .listPagesNavBar {
+    display: flex;
+  }
+  .listPagesNavBar ul {
+    font-size: 1.5rem;
+    display: flex;
+  }
+  .listPagesNavBar .ulNavBar a {
+    padding-right: 1rem;
+  }
+
+  .linkShoppingCart {
+    margin-right: 1.563rem;
+    height: 3.125rem;
+    width: 3.125rem;
+  }
+  .linkShoppingCart .iconify {
+    height: 1.875rem;
+    width: 1.875rem;
+    margin: 0.625rem;
+  }
+}
+@media only screen and (min-width: 810px) and (max-width: 999px) {
+  .navbar {
+    height: 6.563rem;
+  }
+
+  /*logo de la barra de navegacion*/
+  .divLogo {
+    margin-left: 1.563rem;
+    width: 10%;
+  }
+  .divLogo .imgLogo {
+    width: 7rem;
+  }
+
+  /*Lista de la barra de navegacion con shopping cart*/
+  .listPagesNavBar {
+    display: flex;
+  }
+  .listPagesNavBar ul {
+    font-size: 1.5rem;
+    display: flex;
+  }
+  .listPagesNavBar .ulNavBar a {
+    padding-right: 2.5rem;
+  }
+
+  .linkShoppingCart {
+    margin-right: 1.563rem;
+    height: 3.125rem;
+    width: 3.125rem;
+  }
+  .linkShoppingCart .iconify {
+    height: 1.875rem;
+    width: 1.875rem;
+    margin: 0.625rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .navbar {
+    height: 6.563rem;
+  }
+
+  /*logo de la barra de navegacion*/
+  .divLogo {
+    margin-left: 1.563rem;
+    width: 10%;
+  }
+  .divLogo .imgLogo {
+    width: 7rem;
+  }
+
+  /*Lista de la barra de navegacion con shopping cart*/
+  .listPagesNavBar {
+    display: flex;
+  }
+  .listPagesNavBar ul {
+    font-size: 1.5rem;
+    display: flex;
+  }
+  .listPagesNavBar .ulNavBar a {
+    padding-right: 2.5rem;
+  }
+
+  .linkShoppingCart {
+    margin-right: 1.563rem;
+    height: 3.125rem;
+    width: 3.125rem;
+  }
+  .linkShoppingCart .iconify {
+    height: 1.875rem;
+    width: 1.875rem;
+    margin: 0.625rem;
+  }
+}
+.divCont1, .carac, .divCont2 {
+  min-height: 200px;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.divCont1 .contInformativo, .carac .contInformativo, .divCont2 .contInformativo {
+  display: block;
+  text-align: center;
+}
+.divCont1 .contInformativo h1, .carac .contInformativo h1, .divCont2 .contInformativo h1 {
+  font-size: 28px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: black;
+  margin-top: 5px;
+}
+.divCont1 .contInformativo h3, .carac .contInformativo h3, .divCont2 .contInformativo h3 {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: black;
+  margin-top: 5px;
+}
+.divCont1 .contInformativo h3 span, .carac .contInformativo h3 span, .divCont2 .contInformativo h3 span {
+  color: #F8CC2F;
+}
+.divCont1 .contInformativo p, .carac .contInformativo p, .divCont2 .contInformativo p {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: black;
+  margin-top: 5px;
+}
+.divCont1 .btn-azul, .carac .btn-azul, .divCont2 .btn-azul, .divCont1 .btn-blanco, .carac .btn-blanco, .divCont2 .btn-blanco {
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-right: 10%;
+  background-color: #475DA7;
+  color: white;
+  margin-top: 5%;
+}
+.divCont1 .btn-blanco, .carac .btn-blanco, .divCont2 .btn-blanco {
+  background-color: white;
+  color: #475DA7;
+  border-color: #475DA7;
+}
+
+.divCont2 {
+  margin-right: 5%;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+}
+.divCont2 img {
+  width: 90%;
+  height: auto;
+}
+
+.contPrincipal {
+  background-image: linear-gradient(to bottom, #475DA7, #5383BA, white);
+  display: grid;
+  gap: 10px;
+  padding: 5%;
+  width: 100%;
+  height: auto;
+}
+.contPrincipal .iconify {
+  height: 40%;
+  width: auto;
+  padding-left: 38%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.carac {
+  background-color: white;
+  border: 1px solid #475DA7;
+  border-radius: 0.5rem;
+}
+.carac h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.carac p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 949px) {
+  .contPrincipal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+  }
+
+  .contPrimero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 400px;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .contPrimero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 400px;
+  }
+
+  .divCont1, .divCont2, .carac {
+    margin-left: 10%;
+  }
+  .divCont1 .contInformativo, .divCont2 .contInformativo, .carac .contInformativo {
+    display: block;
+    text-align: center;
+  }
+  .divCont1 .contInformativo h1, .divCont2 .contInformativo h1, .carac .contInformativo h1 {
+    font-size: 35px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: black;
+    margin-top: 10px;
+  }
+  .divCont1 .contInformativo h3, .divCont2 .contInformativo h3, .carac .contInformativo h3 {
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    color: black;
+    margin-top: 10px;
+  }
+  .divCont1 .contInformativo h3 span, .divCont2 .contInformativo h3 span, .carac .contInformativo h3 span {
+    color: #F8CC2F;
+  }
+  .divCont1 .contInformativo p, .divCont2 .contInformativo p, .carac .contInformativo p {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: black;
+    margin-top: 10px;
+  }
+  .divCont1 .btn-azul, .divCont2 .btn-azul, .carac .btn-azul, .divCont1 .btn-blanco, .divCont2 .btn-blanco, .carac .btn-blanco {
+    margin-right: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .divCont2 {
+    margin-right: 10%;
+  }
+  .divCont2 img {
+    width: 80%;
+    height: auto;
+  }
+
+  .contPrincipal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+  }
+  .contPrincipal .iconify {
+    height: 40%;
+    width: auto;
+    padding-left: 40%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+$fontPrincipal: 'Raleway', sans-serif;
+$colorAzul: #475DA7;
+$colorBlanco: white;
+$colorNegro: black;
+$colorAmarillo: #F8CC2F;
+
+$colors: (
+    "primary": $colorAzul,
+    "secondary": $colorAmarillo,
+    "white": $colorBlanco,
+    "black": $colorNegro
+);
+
+@mixin fonts($size, $family, $weight, $color, $marginTop) {
+    font-size: $size;
+    font-family: $family;
+    font-weight: $weight;
+    color: $color;
+    margin-top: $marginTop;
+}
+
+@mixin border($px, $color, $radius){
+    border:  $px solid $color;
+    border-radius: $radius;
+}
+
+.divCont1{
+    min-height: 200px;  
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    .contInformativo{
+        display: block;
+        text-align: center;
+
+        h1{
+            @include fonts(28px, $fontPrincipal, 700, map-get($map: $colors, $key: "black" ), 5px );
+        }
+        h3{
+            @include fonts(20px, $fontPrincipal, 600, map-get($map: $colors, $key: "black" ), 5px);
+            span{
+                color: map-get($map: $colors, $key: "secondary" );
+            }
+        }
+        p{
+            @include fonts(16px, $fontPrincipal, 500, map-get($map: $colors, $key: "black" ), 5px);
+        }
+
+    }
+
+    .btn-azul{
+        font-size: 16px;
+        padding: 10px;
+        @include border(2px, map-get($map: $colors, $key: "white" ),10px);
+        margin-right: 10%;
+        background-color: map-get($map: $colors, $key: "primary" );
+        color:  map-get($map: $colors, $key: "white" );
+        margin-top: 5%;
+    }
+    .btn-blanco{
+        @extend .btn-azul;
+        background-color: map-get($map: $colors, $key: "white" );
+        color: map-get($map: $colors, $key: "primary" );
+        border-color:  map-get($map: $colors, $key: "primary" );
+    }
+}
+
+.divCont2{
+    @extend .divCont1;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+
+    img{
+        width: 90%;
+        height: auto;
+    }
+}
+
+.contPrincipal{
+    background-image: linear-gradient(to bottom, map-get($map: $colors, $key: "primary" ), #5383BA, map-get($map: $colors, $key: "white" ));
+    display: grid;
+    gap: 10px;
+    padding: 5%;
+    width: 100%;
+    height: auto;
+
+    .iconify{
+        height: 40%;
+        width: auto;
+        padding-left: 38%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.carac{
+    @extend .divCont1;
+    background-color: map-get($map: $colors, $key: "white" );
+    @include border(1px, map-get($map: $colors, $key: "primary" ),0.5rem);
+
+
+    h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    p{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media only screen and (min-width:700px) and (max-width:949px) {
+    .contPrincipal{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3,200px);
+    }
+    .contPrimero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-height: 400px;
+    }
+}
+
+@media only screen and (min-width:950px) {
+
+    .contPrimero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-height: 400px;
+    }
+    .divCont1{
+        margin-left: 10%;
+    
+        .contInformativo{
+            display: block;
+            text-align: center;
+    
+            h1{
+                @include fonts(35px, $fontPrincipal, 700, map-get($map: $colors, $key: "black" ), 10px );
+            }
+            h3{
+                @include fonts(25px, $fontPrincipal, 600, map-get($map: $colors, $key: "black" ), 10px);
+                span{
+                    color: map-get($map: $colors, $key: "secondary" );
+                }
+            }
+            p{
+                @include fonts(20px, $fontPrincipal, 500, map-get($map: $colors, $key: "black" ), 10px);
+            }
+    
+        }
+    
+        .btn-azul{
+            margin-right: 30px;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    }
+    
+    .divCont2{
+        @extend .divCont1;
+        margin-right: 10%;
+    
+        img{
+            width: 80%;
+            height: auto;
+        }
+    }
+    
+    .contPrincipal{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,200px);
+
+        .iconify{
+            height: 40%;
+            width: auto;
+            padding-left: 40%;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+}
