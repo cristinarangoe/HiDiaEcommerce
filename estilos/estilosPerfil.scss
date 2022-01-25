@@ -1,0 +1,46 @@
+@import "variables.scss";
+
+.divIzq{
+    background-color: map-get($map: $colors, $key: "primary");
+    border-radius: 20px;
+    margin-bottom: $margin5;
+}
+.contIzq{
+    margin-left: $margin4;
+    margin-top: 8%;
+    margin-right: $margin4;
+    color: map-get($map: $colors, $key: "white");
+    h2{
+        margin-bottom: $margin3;
+        text-align: center;
+    }
+    button{
+        margin-top: $margin3;
+        align-content: center;
+        margin-bottom: $margin3;
+    }
+}
+.divDer{
+    background-color: map-get($map: $colors, $key: "white");
+    border-radius: 20px;
+    border: 2px solid rgb(230, 230, 230);
+    margin-bottom: $margin5;
+}
+.contDer{
+    margin-left: $margin4;
+    margin-top: 8%;
+    margin-right: $margin4;
+    h2{
+        margin-bottom: $margin3;
+        text-align: center;
+    }
+    button{
+        margin-top: $margin3;
+    }
+}
+.btn-blanco{
+    border: 2px solid map-get($map: $colors, $key: "primary");
+    color:map-get($map: $colors, $key: "primary");
+    background-color: map-get($map: $colors, $key: "white");
+}
+

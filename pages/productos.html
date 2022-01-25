@@ -10,8 +10,9 @@
         content="Página de productos de Hi Día, podrás encontrar todos los productos que tenemos." />
     <meta name="keywords"
         content="productos de hi dia, lista de productos de hi dia, que productos tiene la empresa hi dia, informacion de productos de hi dia, que venden en hi dia, pagina de productos de hi dia">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="../estilos/estilosPpal.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="stylesheet" href="../css/estilosProductos.css" />
@@ -236,11 +237,8 @@
             </div>
         </div>
     </div>
-
-
     <footer class="footer">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-
             <div class="me-5 d-none d-lg-block">
                 <span>Encuentranos en nuestras redes sociales:</span>
             </div>
@@ -258,24 +256,21 @@
             </div>
         </section>
         <section class="">
-            <div class="container text-center text-md-start mt-5">
+            <div class="container text-center text-md-start mt-5 d-none d-md-block d-lg-block d-xl-block">
                 <div class="row mt-3">
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Hi dia
-                        </h6>
+                        <h6 class="text-uppercase fw-bold mb-4">Hi dia</h6>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia nobis laudantium voluptatem
-                            neque nemo, molestiae repellat adipisci incidunt amet, dicta id necessitatibus nulla ea illo
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+                            nobis laudantium voluptatem neque nemo, molestiae repellat
+                            adipisci incidunt amet, dicta id necessitatibus nulla ea illo
                             mollitia deleniti suscipit! Ut, animi.
                         </p>
                     </div>
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Productos
-                        </h6>
+                        <h6 class="text-uppercase fw-bold mb-4">Productos</h6>
                         <p>
                             <a href="#!" class="text-reset">Arepas</a>
                         </p>
@@ -295,11 +290,9 @@
                             <a href="#!" class="text-reset">Salsas</a>
                         </p>
                     </div>
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <div class=" col-xs-6 col-sm-6  col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Paginas
-                        </h6>
+                        <h6 class="text-uppercase fw-bold mb-4">Paginas</h6>
                         <p>
                             <a href="#!" class="text-reset">Inicio</a>
                         </p>
@@ -316,22 +309,65 @@
                             <a href="#!" class="text-reset">Carrito</a>
                         </p>
                     </div>
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Contacto
-                        </h6>
-                        <p> Medellin, barrio manila.</p>
-                        <p>
-                            info@hidia.com.co
-                        </p>
+                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                        <p>Medellin, barrio manila.</p>
+                        <p>info@hidia.com.co</p>
                         <p>+ 57 3246666</p>
                         <p>+ 57 3216785637</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container text-center mt-2 d-block d-md-none d-lg-none d-xl-none mx-auto">
+                <div class="dropdown d-block d-md-none d-lg-none d-xl-none pt-3">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Hi Día
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <p class="dropdown-item">hola</p>
+                    </div>
+                </div>
+                <div class="dropdown d-block d-md-none d-lg-none d-xl-none">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Productos
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Arepas</a>
+                      <a class="dropdown-item" href="#">Cárnicos</a>
+                      <a class="dropdown-item" href="#">Mexicano</a>
+                      <a class="dropdown-item" href="#">Desayunos</a>
+                      <a class="dropdown-item" href="#">Preparados</a>
+                      <a class="dropdown-item" href="#">Salsas</a>
+                    </div>
+                </div>
+                <div class="dropdown d-block d-md-none d-lg-none d-xl-none">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Páginas
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Inicio</a>
+                      <a class="dropdown-item" href="#">Contáctenos</a>
+                      <a class="dropdown-item" href="#">Productos</a>
+                      <a class="dropdown-item" href="#">Perfil/Registro</a>
+                      <a class="dropdown-item" href="#">Carrito</a>
+                    </div>
+                </div>
+                <div class="dropdown d-block d-md-none d-lg-none d-xl-none pb-3">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Información de contacto
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <p class="dropdown-item">Medellín, barrio manila</p>
+                      <p class="dropdown-item">info@hidia.com.co</p>
+                      <p class="dropdown-item">+ 57 3246666</p>
+                      <p class="dropdown-item">+ 57 3216785637</p>
                     </div>
                 </div>
             </div>
         </section>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
@@ -342,118 +378,4 @@
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
     </script>
 </body>
-
 </html>
-<!-- <div class="contPrincipal">
-            <div class="prod prod1">
-                <h4>Producto1</h4>
-                <img src="../img/platoMexicano.png"id="img"/>
-                    <a class="linkShoppingCart" href="#">
-                        <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
-                    </a>
-
-            </div>
-            <div class="prod prod2" id="idprod">
-                <h4>Producto2</h4>
-                <img src="../img/platoMexicano.png" id="img"/>
-                <a class="linkShoppingCart" href="#">
-                    <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
-                </a>
-            </div>
-            <div class="prod prod3">
-                <h4>Producto3</h4>
-                <img src="../img/platoMexicano.png"id="img"/>
-                <a class="linkShoppingCart" href="#">
-                    <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
-                </a>
-            </div>
-            <div class="prod prod4">
-                <h4>Producto4</h4>
-                <img src="../img/platoMexicano.png"id="img"/>
-                <a class="linkShoppingCart" href="#">
-                    <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
-                </a>
-            </div>
-            <div class="prod prod5">
-                <h4>Producto5</h4>
-                <img src="../img/platoMexicano.png"id="img"/>
-                <a class="linkShoppingCart" href="#">
-                    <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
-                </a>
-            </div>
-            <div class="prod prod6">
-                <h4>Producto6</h4>
-                <img src="../img/platoMexicano.png"id="img"/>
-                <a class="linkShoppingCart" href="#">
-                    <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
-                </a>
-            </div>
-            <div class="prod prod7">
-                <h4>Producto7</h4>
-                <img src="../img/platoMexicano.png"id="img"/>
-                <a class="linkShoppingCart" href="#">
-                    <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
-                </a>
-            </div>
-            <div class="prod prod8">
-                <h4>Producto8</h4>
-                <img src="../img/platoMexicano.png"id="img"/>
-                <a class="linkShoppingCart" href="#">
-                    <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
-                </a>
-        </div>
-    </div> -->
-<!-- <nav class="navbar">
-            <div class="divLogo">
-                <a href="../index.html">
-                    <img class="imgLogo" src="../img/Logo.png" height="40" width="40" />
-                </a>
-            </div>
-            <div class="listPagesNavBar">
-                <ul type="none" class="ulNavBar">
-                    <li><a href="../index.html" class="">Inicio</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./perfil.html">Perfil/Registro</a></li>
-                </ul>
-                <a class="linkShoppingCart" href="./carrito.html">
-                    <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
-                </a>
-            </div>
-        </nav> -->
-<!-- <footer class="footer">
-    <div class="divLeft">
-        <ul type="none" class="FooterLeftListUl">
-            <li><a href="#">Arepas</a></li>
-            <li><a href="#">Cárnicos</a></li>
-            <li><a href="#">Salsas</a></li>
-            <li><a href="#">Preparados</a></li>
-            <li><a href="#">Mexicano</a></li>
-            <li><a href="#">Desayunos</a></li>
-        </ul>
-    </div>
-    <div class="divMiddle">
-        <h3>Alimentos Hi día S.A.S</h3>
-        <div class="redesSociales">
-            <a href="https://www.instagram.com/hidiafoodfactory/">
-                <span class="iconify" data-icon="mdi:instagram" data-inline="false"></span>
-            </a>
-            <a href="https://www.facebook.com/Hidiafoodfactory">
-                <span class="iconify" data-icon="mdi:facebook" data-inline="false"></span>
-            </a>
-            <a
-                href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D573053207500&e=ATPkrKp8wNFINx-Tz7lR9Z_5GAofqiFYS3XSLgOlnCZSLxE-ty1x-CHpywfT-66RiiMCSHWEJCxux-BlBXGmXA&s=1">
-                <span class="iconify" data-icon="mdi:whatsapp" data-inline="false"></span>
-            </a>
-        </div>
-    </div>
-    <div class="divRight">
-        <ul type="none" class="FooterRightListUl">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="./perfil.html">Perfil/Registro</a></li>
-            <li><a href="./carrito.html">Carrito</a></li>
-        </ul>
-    </div>
-</footer> -->

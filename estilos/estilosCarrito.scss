@@ -1,0 +1,78 @@
+@import "variables.scss";
+
+.carritoPpal{
+        display: flex;
+        font-family: $fontPrincipal;
+        font-size: 0.8rem;
+        font-weight: $fontBold;
+        margin: auto;
+        width: 90%;
+        box-shadow: 0 3px 3px 0 map-get($map: $colors, $key: "black");
+        border-radius: 1rem;
+        border: transparent;
+        margin-bottom: $margin5;
+
+        .cart {
+            padding-top: $margin4;
+            padding-bottom: $margin4;
+            border-bottom-left-radius: 1rem;
+            border-top-left-radius: 1rem
+        }
+        .textoProducto{
+            font-size: 1rem;
+        }
+        .resumen {
+            background-color:map-get($map: $colors, $key: "primary");
+            border-bottom-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            padding-top: $margin4;
+            padding-left: $margin2;
+            padding-bottom: $margin4;
+            color: map-get($map: $colors, $key: "white");
+        }
+        .row {
+            margin: 0
+        }
+        .main {
+            padding: $margin2 0;
+            width: $porciento100;
+        }
+        a {
+            padding: 0 $margin4;
+        }
+        .carritoNumero{
+            font-family: $fontSecondary;
+        }
+        .fa-remove{
+            font-size: 1.5rem;
+            color: map-get($map: $colors, $key: "terciary");
+            font-weight:$fontBold ;
+        }
+        img {
+            width: 8rem;
+            height: auto;
+        }
+        .colIzq{
+            padding-left:0;
+        }
+        .textoResumen{
+            font-size:1.2rem;
+            color: map-get($map: $colors, $key: "white");
+        }
+        .totalResumen{
+            border-top: 1px solid map-get($map: $colors, $key: "white");
+            padding: $margin5 0;
+        }
+        .btn {
+            background-color: map-get($map: $colors, $key: "white");
+            color: map-get($map: $colors, $key: "primary");
+            width: $porciento100;
+            font-size: 1rem;
+            margin-top: $margin2;
+            padding: $margin2;
+            border-radius: 5px;
+            font-weight: $fontSemiBold;
+        }
+        
+}

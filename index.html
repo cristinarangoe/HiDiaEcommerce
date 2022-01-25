@@ -10,8 +10,9 @@
     <meta name="keywords"
         content="pagina de inicio de hi dia, Hidiafoodfactory, Medellin, Colombia, pagina de inicio, hi dia, arepas, chorizos, pagina de hi dia,informacion general de hi dia, arepas en medellin, productos artesanales en medellin, arepas artesanales en medellin, chorizos artesanales en medellin, comida mexicana en medellin, productos preparados en medellin, comida congelada en medellin" />
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="./estilos/estilosPpal.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/estilos.css" />
     <link rel="stylesheet" href="./css/estilosIndex.css" />
@@ -21,15 +22,15 @@
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-md justify-content-between">
-            <!-- Brand -->
+
             <a class="navbar-brand" href="./index.html">
                 <img class="imgLogo" src="./img/Logo.png" />
             </a>
-            <!-- Toggler/collapsibe Button -->
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Navbar links -->
+
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav navbar-right">
                     <li class="nav-item">
@@ -284,9 +285,9 @@
             </div>
         </section>
         <section class="">
-            <div class="container text-center text-md-start mt-5">
+            <div class="container text-center text-md-start mt-5 d-none d-md-block d-lg-block d-xl-block">
                 <div class="row mt-3">
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
                         <h6 class="text-uppercase fw-bold mb-4">Hi dia</h6>
                         <p>
@@ -296,7 +297,7 @@
                             mollitia deleniti suscipit! Ut, animi.
                         </p>
                     </div>
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Productos</h6>
                         <p>
@@ -318,7 +319,7 @@
                             <a href="#!" class="text-reset">Salsas</a>
                         </p>
                     </div>
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <div class=" col-xs-6 col-sm-6  col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Paginas</h6>
                         <p>
@@ -337,12 +338,60 @@
                             <a href="#!" class="text-reset">Carrito</a>
                         </p>
                     </div>
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
                         <p>Medellin, barrio manila.</p>
                         <p>info@hidia.com.co</p>
                         <p>+ 57 3246666</p>
                         <p>+ 57 3216785637</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container text-center mt-2 d-block d-md-none d-lg-none d-xl-none mx-auto">
+                <div class="dropdown d-block d-md-none d-lg-none d-xl-none pt-3">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Hi Día
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <p class="dropdown-item">hola</p>
+                    </div>
+                </div>
+                <div class="dropdown d-block d-md-none d-lg-none d-xl-none">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Productos
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Arepas</a>
+                      <a class="dropdown-item" href="#">Cárnicos</a>
+                      <a class="dropdown-item" href="#">Mexicano</a>
+                      <a class="dropdown-item" href="#">Desayunos</a>
+                      <a class="dropdown-item" href="#">Preparados</a>
+                      <a class="dropdown-item" href="#">Salsas</a>
+                    </div>
+                </div>
+                <div class="dropdown d-block d-md-none d-lg-none d-xl-none">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Páginas
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Inicio</a>
+                      <a class="dropdown-item" href="#">Contáctenos</a>
+                      <a class="dropdown-item" href="#">Productos</a>
+                      <a class="dropdown-item" href="#">Perfil/Registro</a>
+                      <a class="dropdown-item" href="#">Carrito</a>
+                    </div>
+                </div>
+                <div class="dropdown d-block d-md-none d-lg-none d-xl-none pb-3">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Información de contacto
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <p class="dropdown-item">Medellín, barrio manila</p>
+                      <p class="dropdown-item">info@hidia.com.co</p>
+                      <p class="dropdown-item">+ 57 3246666</p>
+                      <p class="dropdown-item">+ 57 3216785637</p>
                     </div>
                 </div>
             </div>
@@ -360,89 +409,3 @@
 </body>
 
 </html>
-<!-- <nav class="navbar">
-            <div class="divLogo">
-                <a href="./index.html">
-                    <img class="imgLogo" src="./img/Logo.png" height="40" width="40" />
-                </a>
-            </div>
-            <div class="listPagesNavBar">
-                <ul type="none" class="ulNavBar">
-                    <li class="inicio"><a href="./index.html" >Inicio</a></li>
-                    <li><a href="./pages/contacto.html" class="contacto">Contacto</a></li>
-                    <li><a href="./pages/productos.html" class="productos">Productos</a></li>
-                    <li><a href="./pages/perfil.html" class="perfil">Perfil/Registro</a></li>
-                </ul>
-                <a class="linkShoppingCart" href="./pages/carrito.html">
-                    <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
-                </a>
-            </div>
-        </nav> -->
-<!-- <div class="contPrincipal">
-        <div class="carac carac1">
-            <h2>Caracteristica1</h2>
-            <span class="iconify" data-icon="fluent:food-apple-24-filled" data-inline="false"></span>
-            <p>Esta es la descripcion de la caracteristica 1</p>
-        </div>
-        <div class="carac carac2">
-            <h2>Caracteristica2</h2>
-            <span class="iconify" data-icon="mdi:food" data-inline="false"></span>
-            <p>Esta es la descripcion de la caracteristica 2</p>
-        </div>
-        <div class="carac carac3">
-            <h2>Caracteristica3</h2>
-            <span class="iconify" data-icon="whh:foodtray" data-inline="false"></span>
-            <p>Esta es la descripcion de la caracteristica 3</p>
-        </div>
-        <div class="carac carac4">
-            <h2>Caracteristica4</h2>
-            <span class="iconify" data-icon="mdi:food-turkey" data-inline="false"></span>
-            <p>Esta es la descripcion de la caracteristica 4</p>
-        </div>
-        <div class="carac carac5">
-            <h2>Caracteristica5</h2>
-            <span class="iconify" data-icon="fluent:food-cake-12-regular" data-inline="false"></span>
-            <p>Esta es la descripcion de la caracteristica 5</p>
-        </div>
-        <div class="carac carac6">
-            <h2>Caracteristica6</h2>
-            <span class="iconify" data-icon="fluent:food-16-filled" data-inline="false"></span>
-            <p>Esta es la descripcion de la caracteristica 6</p>
-        </div>
-    </div> -->
-<!-- <footer class="footer">
-        <div class="divLeft">
-            <ul type="none" class="FooterLeftListUl">
-                <li><a href="#">Arepas</a></li>
-                <li><a href="#">Cárnicos</a></li>
-                <li><a href="#">Salsas</a></li>
-                <li><a href="#">Preparados</a></li>
-                <li><a href="#">Mexicano</a></li>
-                <li><a href="#">Desayunos</a></li>
-            </ul>
-        </div>
-        <div class="divMiddle">
-            <h3>Alimentos Hi día S.A.S</h3>
-            <div class="redesSociales">
-                <a href="https://www.instagram.com/hidiafoodfactory/">
-                    <span class="iconify" data-icon="mdi:instagram" data-inline="false"></span>
-                </a>
-                <a href="https://www.facebook.com/Hidiafoodfactory">
-                    <span class="iconify" data-icon="mdi:facebook" data-inline="false"></span>
-                </a>
-                <a
-                    href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D573053207500&e=ATPkrKp8wNFINx-Tz7lR9Z_5GAofqiFYS3XSLgOlnCZSLxE-ty1x-CHpywfT-66RiiMCSHWEJCxux-BlBXGmXA&s=1">
-                    <span class="iconify" data-icon="mdi:whatsapp" data-inline="false"></span>
-                </a>
-            </div>
-        </div>
-        <div class="divRight">
-            <ul type="none" class="FooterRightListUl">
-                <li><a href="./index.html" class="">Inicio</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/perfil.html">Perfil/Registro</a></li>
-                <li><a href="./pages/perfil.html">Carrito</a></li>
-            </ul>
-        </div>
-    </footer> -->

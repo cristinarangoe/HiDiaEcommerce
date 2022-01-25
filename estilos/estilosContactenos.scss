@@ -1,0 +1,42 @@
+@import "variables.scss";
+
+.tituloContactenos{
+    margin-left: $margin3;
+    margin-right: $margin3;
+}
+.btn-azul{
+    background-color: map-get($map: $colors, $key: "primary");
+    color: map-get($map: $colors, $key: "white");
+}
+.card {
+    margin-top: $margin3;
+    i{
+        margin-top: $margin3;
+        font-size:4rem;
+    }
+    span{
+        color: map-get($map: $colors, $key: "secondary");
+    }
+}
+.container {
+    h2,h4{
+    text-align: center;
+    }
+    h2{
+        font-family: $fontPrincipal;
+        font-weight: $fontBold;
+        margin-top: $margin3;
+        margin-bottom: $margin1;
+    }
+    h4{
+        font-family: $fontPrincipal;
+        font-weight: $fontWeightPrincipal;
+        margin-bottom: $margin3;
+    }
+}
+.buttonSubmit{
+    margin-bottom: 2rem;
+    background-color: map-get($map: $colors, $key: "primary");
+    color: map-get($map: $colors, $key: "white");
+}
+

@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap'); */
 
-*{
+/* *{
     padding:0;
     margin:0;
     box-sizing: border-box;
@@ -10,9 +10,9 @@ a{
 }
 header{
     z-index:999;
-}
+} */
 
-.imgLogo{
+/* .imgLogo{
     height: 100%;
     width: 5rem;
 }
@@ -41,13 +41,4 @@ header{
 }
 .navbar-toggler-icon{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='grey' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-.footer{
-    background-color: #475DA7;
-    color: white;
-    /* display: flex;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    padding: 1.5rem; */
-}
+} */

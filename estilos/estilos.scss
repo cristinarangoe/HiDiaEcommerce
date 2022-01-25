@@ -1,0 +1,25 @@
+//import de bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//elementos necesarios generales para todas las paginas
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+a{
+    color:inherit;
+}
+
+//import de elementos que tienen todas las paginas
+@import "footer.scss";
+@import "navbar.scss";
+
+//import de cada pagina
+@import "estilosIndex.scss";
+@import "estilosContactenos.scss";
+@import "estilosProductos.scss";
+@import "estilosPerfil.scss";
+@import 'estilosCarrito.scss';
+
+

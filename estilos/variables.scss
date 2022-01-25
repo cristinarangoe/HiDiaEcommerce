@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+
+$fontPrincipal: 'Raleway', sans-serif;
+$fontSecondary: arial, sans-serif;
+$colorAzul: #475DA7;
+$colorBlanco: white;
+$colorNegro: black;
+$colorAmarillo: #F8CC2F;
+$colorRojo: #C84146;
+$fontWeightPrincipal: 500;
+$fontBold: 700;
+$fontSemiBold: 600;
+$porciento100: 100%;
+$margin10: 10%;
+$margin4: 4%;
+$margin5: 5%;
+$margin3: 3%;
+$margin2: 2%;
+$margin1: 1%;
+
+$colors: (
+    "primary": $colorAzul,
+    "secondary": $colorAmarillo,
+    "terciary": $colorRojo,
+    "white": $colorBlanco,
+    "black": $colorNegro
+);
+
+@mixin fonts($size, $family, $weight, $color) {
+    font-size: $size;
+    font-family: $family;
+    font-weight: $weight;
+    color: $color;
+}

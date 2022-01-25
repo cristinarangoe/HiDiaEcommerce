@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 
 *{
     box-sizing: border-box;
@@ -77,24 +77,4 @@ body{
 .divProductos2{
     margin-bottom: 4%;
 }
-
-/* @media only screen and (min-width:700px) and (max-width:949px) {
-    .contPrincipal{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3,200px);
-    }
-} */
-/* 
-@media only screen and (min-width:950px) {
-    .contPrincipal{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,200px);
-    }
-    .contPrincipal .iconify{
-        height: 40%;
-        width: auto;
-        padding-left: 40%;
-    }
-} */
+ */

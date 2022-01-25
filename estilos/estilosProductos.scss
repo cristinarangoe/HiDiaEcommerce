@@ -1,0 +1,44 @@
+@import "variables.scss";
+
+
+.btn-azul{
+    background-color: map-get($map: $colors, $key: "primary");
+    color: map-get($map: $colors, $key: "white");
+}
+.divButton{
+    width: auto;
+}
+.btn-amarillo{
+    border: 2px solid map-get($map: $colors, $key: "secondary");
+    border-radius: 10px;
+    width: 8rem;
+    margin-bottom: $margin10;
+    font-family: $fontPrincipal;
+    font-weight: $fontSemiBold;
+}
+.divProductos{
+    width: $porciento100;
+    font-family: $fontPrincipal;
+    h2{
+        align-content: center;
+        margin-bottom: $margin3;
+        font-weight: $fontSemiBold;
+    }
+}
+.card{
+    margin-top:$margin5;
+    .fa-cart-plus{
+        font-size:1.5rem;
+        padding: auto;
+    }
+    h4{
+        font-weight: $fontSemiBold;
+    }
+    h5{
+        font-family: $fontSecondary;
+    }
+}
+.divProductos2{
+    margin-bottom: $margin4;
+    margin-top: $margin4;
+}
