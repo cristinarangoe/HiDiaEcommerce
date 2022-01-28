@@ -9948,9 +9948,31 @@ a {
 .footer {
   background-color: #475DA7;
   color: white;
+  height: auto;
 }
 .footer .btn {
   color: white;
+}
+.footer .iconosFooter {
+  font-size: 1.5rem;
+  padding: auto;
+  margin-left: 1rem;
+}
+.footer .iconosFooter:hover {
+  color: white;
+}
+
+.dropdown-menu-full {
+  width: 100%;
+  border: none;
+  background-color: #475DA7;
+}
+.dropdown-menu-full .dropdown-item {
+  color: white;
+  text-align: center;
+}
+.dropdown-menu-full .dropdown-item:hover {
+  background-color: #475DA7;
 }
 
 .navbar .imgLogo {
@@ -10086,19 +10108,21 @@ a {
   color: #F8CC2F;
 }
 
-.container h2, .container h4 {
+.container h1, .container h2, .container h4, .container h5, .container h6 {
+  font-family: "Raleway", sans-serif;
   text-align: center;
 }
-.container h2 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
+.container h1, .container h2 {
+  font-weight: 600;
   margin-top: 3%;
   margin-bottom: 1%;
 }
-.container h4 {
-  font-family: "Raleway", sans-serif;
+.container h4, .container h5 {
   font-weight: 500;
   margin-bottom: 3%;
+}
+.container h6 {
+  font-weight: 500;
 }
 
 .buttonSubmit {
@@ -10144,6 +10168,7 @@ a {
 }
 .card h4 {
   font-weight: 600;
+  font-family: "Raleway", sans-serif;
 }
 .card h5 {
   font-family: arial, sans-serif;

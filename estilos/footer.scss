@@ -3,9 +3,30 @@
 .footer{
     background-color: map-get($map: $colors, $key: "primary");
     color: map-get($map: $colors, $key: "white");
-
+    height: auto;
     .btn{
+        color: map-get($map: $colors, $key: "white");
+    }
+    .iconosFooter{
+        font-size: 1.5rem;
+        padding: auto;
+        margin-left: 1rem;
+    }
+    .iconosFooter:hover{
         color: map-get($map: $colors, $key: "white");
     }
 
 }
+.dropdown-menu-full{
+    width: 100%;
+    border: none;
+    background-color: map-get($map: $colors, $key: "primary");
+    .dropdown-item{
+        color: map-get($map: $colors, $key: "white");
+        text-align: center;
+    }
+    .dropdown-item:hover{
+        background-color: map-get($map: $colors, $key: "primary");
+    }
+}
+

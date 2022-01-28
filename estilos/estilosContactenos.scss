@@ -19,19 +19,20 @@
     }
 }
 .container {
-    h2,h4{
+    h1,h2,h4,h5,h6{
+        font-family: $fontPrincipal;
     text-align: center;
     }
-    h2{
-        font-family: $fontPrincipal;
-        font-weight: $fontBold;
+    h1,h2{
+        font-weight: $fontSemiBold;
         margin-top: $margin3;
         margin-bottom: $margin1;
     }
-    h4{
-        font-family: $fontPrincipal;
+    h4,h5{
         font-weight: $fontWeightPrincipal;
         margin-bottom: $margin3;
+    }
+    h6{font-weight: $fontWeightPrincipal;
     }
 }
 .buttonSubmit{
