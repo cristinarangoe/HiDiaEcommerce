@@ -1,12 +1,8 @@
-@import "variables.scss";
+@import "../componentesSASS/variables.scss";
 
 .tituloContactenos{
     margin-left: $margin3;
     margin-right: $margin3;
-}
-.btn-azul{
-    background-color: map-get($map: $colors, $key: "primary");
-    color: map-get($map: $colors, $key: "white");
 }
 .card {
     margin-top: $margin3;
@@ -18,9 +14,9 @@
         color: map-get($map: $colors, $key: "secondary");
     }
 }
-.container {
+.contContactenos {
     h1,h2,h4,h5,h6{
-        font-family: $fontPrincipal;
+    font-family: $fontPrincipal;
     text-align: center;
     }
     h1,h2{
@@ -32,7 +28,8 @@
         font-weight: $fontWeightPrincipal;
         margin-bottom: $margin3;
     }
-    h6{font-weight: $fontWeightPrincipal;
+    h6{
+        font-weight: $fontWeightPrincipal;
     }
 }
 .buttonSubmit{

@@ -12,6 +12,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10006,32 +10008,48 @@ a {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='grey' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.imgPlato {
-  max-width: 100%;
-  height: auto;
-}
-
-.jumbotron {
-  background-color: white;
+.divProductos {
+  width: 100%;
+  margin: 0;
+  margin-top: 4%;
   font-family: "Raleway", sans-serif;
 }
-.jumbotron span {
-  color: #F8CC2F;
+.divProductos h2 {
+  align-content: center;
+  margin-bottom: 3%;
+  font-weight: 600;
 }
-.jumbotron h1 {
-  font-weight: 700;
+
+.divButton {
+  text-align: center;
+  width: auto;
+}
+
+.divProductos2 {
   margin-bottom: 4%;
-}
-.jumbotron h3 {
-  font-weight: 600;
-}
-.jumbotron p {
-  font-weight: 500;
-}
-.jumbotron button {
-  margin-right: 5%;
-  font-weight: 600;
   margin-top: 4%;
+}
+.divProductos2 h3 {
+  font-weight: 600;
+}
+.divProductos2 .card {
+  margin-top: 5%;
+}
+.divProductos2 .card .card-img-top {
+  margin: auto;
+  width: 80%;
+  height: auto;
+}
+.divProductos2 .card .fa-cart-plus {
+  font-size: 1.5rem;
+  padding: auto;
+}
+.divProductos2 .card h4 {
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+.divProductos2 .card h5 {
+  font-family: arial, sans-serif;
 }
 
 .btn-azul {
@@ -10042,10 +10060,7 @@ a {
 .btn-blanco {
   border: 2px solid #475DA7;
   color: #475DA7;
-}
-
-.divButton {
-  width: auto;
+  background-color: white;
 }
 
 .btn-amarillo {
@@ -10057,44 +10072,48 @@ a {
   font-weight: 600;
 }
 
-.divProductos {
+.contImgPlato {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+.contImgPlato .imgPlato {
   width: 100%;
-  margin-top: 4%;
+  height: auto;
+}
+
+.jumbotron {
+  background-color: white;
   font-family: "Raleway", sans-serif;
+  margin: 0;
 }
-.divProductos h2 {
-  align-content: center;
-  margin-bottom: 3%;
-  font-weight: 600;
+.jumbotron span {
+  color: #F8CC2F;
 }
-
-.fa-cart-plus {
-  font-size: 1.5rem;
-  padding: auto;
-}
-
-.card {
-  margin-top: 5%;
-}
-.card h4 {
-  font-weight: 600;
-}
-.card h5 {
-  font-family: arial, sans-serif;
-}
-
-.divProductos2 {
+.jumbotron h1 {
+  text-align: left;
+  font-weight: 700;
   margin-bottom: 4%;
+}
+.jumbotron h2 {
+  font-weight: 600;
+}
+.jumbotron p {
+  font-weight: 500;
+}
+.jumbotron a {
+  margin-right: 5%;
+  font-weight: 600;
+  margin-top: 4%;
+}
+
+.divButton {
+  width: auto;
 }
 
 .tituloContactenos {
   margin-left: 3%;
   margin-right: 3%;
-}
-
-.btn-azul {
-  background-color: #475DA7;
-  color: white;
 }
 
 .card {
@@ -10108,20 +10127,20 @@ a {
   color: #F8CC2F;
 }
 
-.container h1, .container h2, .container h4, .container h5, .container h6 {
+.contContactenos h1, .contContactenos h2, .contContactenos h4, .contContactenos h5, .contContactenos h6 {
   font-family: "Raleway", sans-serif;
   text-align: center;
 }
-.container h1, .container h2 {
+.contContactenos h1, .contContactenos h2 {
   font-weight: 600;
   margin-top: 3%;
   margin-bottom: 1%;
 }
-.container h4, .container h5 {
+.contContactenos h4, .contContactenos h5 {
   font-weight: 500;
   margin-bottom: 3%;
 }
-.container h6 {
+.contContactenos h6 {
   font-weight: 500;
 }
 
@@ -10129,54 +10148,6 @@ a {
   margin-bottom: 2rem;
   background-color: #475DA7;
   color: white;
-}
-
-.btn-azul {
-  background-color: #475DA7;
-  color: white;
-}
-
-.divButton {
-  width: auto;
-}
-
-.btn-amarillo {
-  border: 2px solid #F8CC2F;
-  border-radius: 10px;
-  width: 8rem;
-  margin-bottom: 10%;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-}
-
-.divProductos {
-  width: 100%;
-  font-family: "Raleway", sans-serif;
-}
-.divProductos h2 {
-  align-content: center;
-  margin-bottom: 3%;
-  font-weight: 600;
-}
-
-.card {
-  margin-top: 5%;
-}
-.card .fa-cart-plus {
-  font-size: 1.5rem;
-  padding: auto;
-}
-.card h4 {
-  font-weight: 600;
-  font-family: "Raleway", sans-serif;
-}
-.card h5 {
-  font-family: arial, sans-serif;
-}
-
-.divProductos2 {
-  margin-bottom: 4%;
-  margin-top: 4%;
 }
 
 .divIzq {
@@ -10219,12 +10190,6 @@ a {
 }
 .contDer button {
   margin-top: 3%;
-}
-
-.btn-blanco {
-  border: 2px solid #475DA7;
-  color: #475DA7;
-  background-color: white;
 }
 
 .carritoPpal {

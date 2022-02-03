@@ -12,14 +12,18 @@ a{
 }
 
 //import de elementos que tienen todas las paginas
-@import "footer.scss";
-@import "navbar.scss";
+@import "./componentesSASS/footer.scss";
+@import "./componentesSASS/navbar.scss";
+
+//import de componentes que tienen comunes varias paginas
+@import "./componentesSASS/compProductos.scss";
+@import "./componentesSASS/buttons.scss";
 
 //import de cada pagina
-@import "estilosIndex.scss";
-@import "estilosContactenos.scss";
-@import "estilosProductos.scss";
-@import "estilosPerfil.scss";
-@import 'estilosCarrito.scss';
+@import "./estilosPaginas/estilosIndex.scss";
+@import "./estilosPaginas/estilosContactenos.scss";
+@import "./estilosPaginas/estilosProductos.scss";
+@import "./estilosPaginas/estilosPerfil.scss";
+@import "./estilosPaginas/estilosCarrito.scss";
 
 

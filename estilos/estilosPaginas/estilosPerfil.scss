@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "../componentesSASS/variables.scss";
 
 .divIzq{
     background-color: map-get($map: $colors, $key: "primary");
@@ -37,10 +37,5 @@
     button{
         margin-top: $margin3;
     }
-}
-.btn-blanco{
-    border: 2px solid map-get($map: $colors, $key: "primary");
-    color:map-get($map: $colors, $key: "primary");
-    background-color: map-get($map: $colors, $key: "white");
 }
 

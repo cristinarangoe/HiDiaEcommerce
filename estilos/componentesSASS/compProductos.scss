@@ -1,0 +1,43 @@
+@import "variables.scss";
+//clases comunes entre las paginas de index y productos
+.divProductos{
+    width: $porciento100;
+    margin:0;
+    margin-top: $margin4;
+    font-family: $fontPrincipal;
+    h2{
+        align-content: center;
+        margin-bottom: $margin3;
+        font-weight: $fontSemiBold;
+    }
+}
+.divButton{
+    text-align: center;
+    width: auto;
+}
+.divProductos2{
+    margin-bottom: $margin4;
+    margin-top: $margin4;
+    h3{
+        font-weight:$fontSemiBold;
+    }
+    .card{
+        margin-top:$margin5;
+        .card-img-top{
+            margin: auto;
+            width: 80%;
+            height: auto;
+        }
+        .fa-cart-plus{
+            font-size:1.5rem;
+            padding: auto;
+        }
+        h4{
+            font-weight: $fontSemiBold;
+            font-family: $fontPrincipal;
+        }
+        h5{
+            font-family: $fontSecondary;
+        }
+    }
+}
