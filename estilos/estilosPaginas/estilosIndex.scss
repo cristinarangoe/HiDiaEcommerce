@@ -1,11 +1,11 @@
 @import "../componentesSASS/variables.scss";
 
 .contImgPlato{
-    width: 80%;
+    width: 100%;
     text-align: center;
     margin: auto;
     .imgPlato{
-        width: 100%;
+        width: 80%;
         height: auto;
     }
 }
@@ -23,9 +23,11 @@
     }
     h2{
         font-weight:$fontSemiBold;
+        margin-bottom: $margin4;
     }
-    p{
+    h4{
         font-weight: $fontWeightPrincipal;
+        margin-bottom: $margin4;
     }
     a{
         margin-right: $margin5;

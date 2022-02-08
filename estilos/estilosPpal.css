@@ -10002,7 +10002,7 @@ a {
 }
 .navbar .fa-cart-plus {
   font-size: 1.5rem;
-  padding: auto;
+  margin: auto;
 }
 .navbar .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='grey' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -10039,6 +10039,7 @@ a {
   margin: auto;
   width: 80%;
   height: auto;
+  margin-top: 10%;
 }
 .divProductos2 .card .fa-cart-plus {
   font-size: 1.5rem;
@@ -10073,12 +10074,12 @@ a {
 }
 
 .contImgPlato {
-  width: 80%;
+  width: 100%;
   text-align: center;
   margin: auto;
 }
 .contImgPlato .imgPlato {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -10097,9 +10098,11 @@ a {
 }
 .jumbotron h2 {
   font-weight: 600;
+  margin-bottom: 4%;
 }
-.jumbotron p {
+.jumbotron h4 {
   font-weight: 500;
+  margin-bottom: 4%;
 }
 .jumbotron a {
   margin-right: 5%;
