@@ -1,5 +1,6 @@
 
 //INICIO MOSTRAR PRODUCTOS EN PAGINA DE PRODUCTOS
+
 //Creacion de la clase producto con su constructor.
 class Producto {
     constructor(nombre, descripcion, precio, cantidad, imagen) {
@@ -72,6 +73,8 @@ function setItem(product){
     //if filtro is null, we push the object to the array
     //if filtro is not null, we +1
     filtro ? (filtro.cantidad += 1) : cartItem.push(product);
+
+    alert("producto agregado con exito")
 
     //now we pass to the local storage the array so it can be saved
     localStorage.setItem('producsInCart',JSON.stringify(cartItem));
