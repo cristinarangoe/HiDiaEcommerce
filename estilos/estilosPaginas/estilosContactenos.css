@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+.tituloContactenos {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.contContactenos h1, .contContactenos h2, .contContactenos h4, .contContactenos h5, .contContactenos h6 {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+.contContactenos h1, .contContactenos h2 {
+  font-weight: 600;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+.contContactenos h4, .contContactenos h5 {
+  font-weight: 500;
+  margin-bottom: 3%;
+}
+
+.contContactenos h6 {
+  font-weight: 500;
+}
+
+.contContactenos .card {
+  margin-top: 3%;
+}
+
+.contContactenos .card i {
+  margin-top: 3%;
+  font-size: 4rem;
+}
+
+.contContactenos .card span {
+  color: #F8CC2F;
+}
+
+.buttonSubmit {
+  margin-bottom: 2rem;
+  background-color: #475DA7;
+  color: white;
+}
+/*# sourceMappingURL=estilosContactenos.css.map */

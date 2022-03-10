@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+.divProductos {
+  width: 100%;
+  margin: 0;
+  margin-top: 4%;
+  font-family: "Raleway", sans-serif;
+}
+
+.divProductos h2 {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 3%;
+  font-weight: 600;
+}
+
+.divButton {
+  text-align: center;
+  width: auto;
+}
+
+.divProductos2 {
+  margin-bottom: 4%;
+  margin-top: 4%;
+}
+
+.divProductos2 h3 {
+  font-weight: 600;
+}
+
+.divProductos2 .card {
+  margin-top: 5%;
+}
+
+.divProductos2 .card .card-img-top {
+  margin: auto;
+  width: 80%;
+  height: auto;
+  margin-top: 10%;
+}
+
+.divProductos2 .card .fa-cart-plus {
+  font-size: 1.5rem;
+  padding: auto;
+}
+
+.divProductos2 .card h4 {
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+.divProductos2 .card h5 {
+  font-family: arial, sans-serif;
+}
+/*# sourceMappingURL=compProductos.css.map */

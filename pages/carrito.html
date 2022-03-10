@@ -12,14 +12,14 @@
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" /> -->
-        <link rel="stylesheet" href="../estilos/estilosPpal.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../estilos/estilosPpal.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="stylesheet" href="../css/estilosCarrito.css" />
     <title>Hi Día Carrito de compras</title>
 </head>
 
-<body >
+<body>
     <header class="header">
         <nav class="navbar navbar-expand-md justify-content-between">
             <!-- Brand -->
@@ -75,64 +75,106 @@
                         <div class="col">
                             <h4>Carrito de compras</h4>
                         </div>
-                        <div class="col align-self-center text-right text-muted"><h6>3 items</h6></div>
-                    </div>
-                </div>
-                <div class="row border-top border-bottom">
-                    <div class="row main align-items-center">
-                        <div class="col-2"><img class="img-fluid" src="../img/nachos.jpg"></div>
-                        <div class="col">
-                            <div class="row textoProducto">Nachos</div>
+                        <div class="col align-self-center text-right text-muted">
+                            <h6>3 items</h6>
                         </div>
-                        <div class="col"> <a href="#">-</a><a href="#" class="border carritoNumero">1</a><a href="#">+</a> </div>
-                        <div class="col textoProducto carritoNumero">$10,000 <span class="close"><i class="fa fa-remove"></i></span></div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="row main align-items-center">
-                        <div class="col-2"><img class="img-fluid" src="../img/platoMexicano.png"></div>
-                        <div class="col">
-                            <div class="row textoProducto">Gratinado mexicano</div>
+                <div id="productSectionCart">
+                    <!-- <div class="row border-top border-bottom">
+                        <div class="row main align-items-center">
+                            <div class="col-2">
+                                <img class="img-fluid" src="../img/nachos.jpg" />
+                            </div>
+                            <div class="col">
+                                <div class="row textoProducto">Nachos</div>
+                            </div>
+                            <div class="col">
+                                <a href="#">-</a><a href="#" class="border carritoNumero">1</a><a href="#">+</a>
+                            </div>
+                            <div class="col textoProducto carritoNumero">
+                                $10,000 <span class="close"><i class="fa fa-remove"></i></span>
+                            </div>
                         </div>
-                        <div class="col"> <a href="#">-</a><a href="#" class="border carritoNumero">1</a><a href="#">+</a> </div>
-                        <div class="col textoProducto carritoNumero">$15,000<span class="close"><i class="fa fa-remove"></i></span></div>
                     </div>
-                </div>
-                <div class="row border-top border-bottom">
-                    <div class="row main align-items-center">
-                        <div class="col-2"><img class="img-fluid" src="../img/arepaQueso.jpg"></div>
-                        <div class="col">
-                            <div class="row textoProducto">Arepa de queso</div>
+                    <div class="row">
+                        <div class="row main align-items-center">
+                            <div class="col-2">
+                                <img class="img-fluid" src="../img/platoMexicano.png" />
+                            </div>
+                            <div class="col">
+                                <div class="row textoProducto">Gratinado mexicano</div>
+                            </div>
+                            <div class="col">
+                                <a href="#">-</a><a href="#" class="border carritoNumero">1</a><a href="#">+</a>
+                            </div>
+                            <div class="col textoProducto carritoNumero">
+                                $15,000<span class="close"><i class="fa fa-remove"></i></span>
+                            </div>
                         </div>
-                        <div class="col"> <a href="#">-</a><a href="#" class="border carritoNumero">1</a><a href="#">+</a> </div>
-                        <div class="col textoProducto carritoNumero">$20,000<span class="close"><i class="fa fa-remove"></i></span></div>
                     </div>
+                    <div class="row border-top border-bottom">
+                        <div class="row main align-items-center ">
+                            <div class="col">
+                                <img class="img-fluid" src="../img/arepaQueso.jpg" />
+                            </div>
+                            <div class="col">
+                                <p class="row textoProducto">Arepa de queso</p>
+                            </div>
+                            <div class="col m-auto">
+                                <div class="row align-items-center">
+                                    <a class="mr-1" href="#"><i class="fa fa-minus"></i></a>
+                                    <a href="#" class="carritoNumero mr-1">1</a>
+                                    <a href="#"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                            <div class="col m-auto p-auto">
+                                <p class="row textoProducto carritoNumero">$20,000</p>
+                            </div>
+                            <div class="col">
+                                <a class=""><i id="removeButton" class="fa fa-remove"></i></a>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
+
             </div>
-            <div class="col-md-4 resumen">
-                <div>
+            <div id="resumen" class="col-md-4 resumen">
+                <!-- <div>
                     <h4>Resumen</h4>
                 </div>
-                <hr>
+                <hr />
                 <div class="row">
-                    <div class="col colIzq "><p class="textoResumen">Subtotal</p></div>
-                    <div class="col text-right carritoNumero"><p class="textoResumen">$45,000</p></div>
+                    <div class="col colIzq">
+                        <p class="textoResumen">Subtotal</p>
+                    </div>
+                    <div class="col text-right carritoNumero">
+                        <p class="textoResumen">$45,000</p>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col colIzq"><p class="textoResumen">Envío</p></div>
-                    <div class="col text-right carritoNumero"><p class="textoResumen">$4,000</p></div>
+                    <div class="col colIzq">
+                        <p class="textoResumen">Envío</p>
+                    </div>
+                    <div class="col text-right carritoNumero">
+                        <p class="textoResumen">$4,000</p>
+                    </div>
                 </div>
                 <div class="row totalResumen">
-                    <div class="col colIzq"><p class="textoResumen">Total</p></div>
-                    <div class="col text-right carritoNumero"><p class="textoResumen">$49,000</p></div>
-                </div> 
-                <button class="btn">Continuar con el pago</button>
+                    <div class="col colIzq">
+                        <p class="textoResumen">Total</p>
+                    </div>
+                    <div class="col text-right carritoNumero">
+                        <p class="textoResumen">$49,000</p>
+                    </div>
+                </div>
+                <button class="btn">Continuar con el pago</button> -->
             </div>
         </div>
     </div>
 
     <footer class="footer">
-        <section class=" container d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <section class="container d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <div class="me-5 d-none d-lg-block">
                 <span>Encuentranos en nuestras redes sociales:</span>
             </div>
@@ -155,10 +197,12 @@
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
                         <h6 class="text-uppercase fw-bold mb-4">Hi dia</h6>
-                        <p>Es una empresa de alimentos en la ciudad de Medellín. Se dedica a la producción de alimentos
-                            artesanales, elaborados con la más alta calidad de ingredientes, sin conservantes ni
-                            preservativos. Esta comprometida con darle a sus clientes, alimentos ricos, que sean fáciles
-                            de adquirir y preparar en casa.
+                        <p>
+                            Es una empresa de alimentos en la ciudad de Medellín. Se dedica
+                            a la producción de alimentos artesanales, elaborados con la más
+                            alta calidad de ingredientes, sin conservantes ni preservativos.
+                            Esta comprometida con darle a sus clientes, alimentos ricos, que
+                            sean fáciles de adquirir y preparar en casa.
                         </p>
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
@@ -183,7 +227,7 @@
                             <a href="#!" class="text-reset">Salsas</a>
                         </p>
                     </div>
-                    <div class=" col-xs-6 col-sm-6  col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Paginas</h6>
                         <p>
@@ -209,7 +253,6 @@
                         <p>+ 57 3246666</p>
                         <p>+ 57 3216785637</p>
                     </div>
-
                 </div>
             </div>
 
@@ -256,7 +299,7 @@
             </div>
         </section>
     </footer>
-
+    <script type="text/javascript" src="../js/carrito.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
@@ -269,58 +312,3 @@
 </body>
 
 </html>
-
-<!-- <nav class="navbar">
-            <div class="divLogo">
-                <a href="../index.html">
-                    <img class="imgLogo" src="../img/Logo.png" height="40" width="40" />
-                </a>
-            </div>
-            <div class="listPagesNavBar">
-                <ul type="none" class="ulNavBar">
-                    <li><a href="../index.html" class="">Inicio</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./perfil.html">Perfil/Registro</a></li>
-                </ul>
-                <a class="linkShoppingCart" href="./carrito.html">
-                    <span class="iconify" data-icon="ic:round-shopping-cart" data-inline="false"></span>
-                </a>
-            </div>
-        </nav> -->
-<!-- <footer class="footer">
-    <div class="divLeft">
-        <ul type="none" class="FooterLeftListUl">
-            <li><a href="#">Arepas</a></li>
-            <li><a href="#">Cárnicos</a></li>
-            <li><a href="#">Salsas</a></li>
-            <li><a href="#">Preparados</a></li>
-            <li><a href="#">Mexicano</a></li>
-            <li><a href="#">Desayunos</a></li>
-        </ul>
-    </div>
-    <div class="divMiddle">
-        <h3>Alimentos Hi día S.A.S</h3>
-        <div class="redesSociales">
-            <a href="https://www.instagram.com/hidiafoodfactory/">
-                <span class="iconify" data-icon="mdi:instagram" data-inline="false"></span>
-            </a>
-            <a href="https://www.facebook.com/Hidiafoodfactory">
-                <span class="iconify" data-icon="mdi:facebook" data-inline="false"></span>
-            </a>
-            <a
-                href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D573053207500&e=ATPkrKp8wNFINx-Tz7lR9Z_5GAofqiFYS3XSLgOlnCZSLxE-ty1x-CHpywfT-66RiiMCSHWEJCxux-BlBXGmXA&s=1">
-                <span class="iconify" data-icon="mdi:whatsapp" data-inline="false"></span>
-            </a>
-        </div>
-    </div>
-    <div class="divRight">
-        <ul type="none" class="FooterRightListUl">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="./perfil.html">Perfil/Registro</a></li>
-            <li><a href="./carrito.html">Carrito</a></li>
-        </ul>
-    </div>
-</footer> -->

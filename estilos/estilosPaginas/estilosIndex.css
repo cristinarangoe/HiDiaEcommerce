@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+.contImgPlato {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.contImgPlato .imgPlato {
+  width: 80%;
+  height: auto;
+}
+
+.jumbotron {
+  background-color: white;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+.jumbotron span {
+  color: #F8CC2F;
+}
+
+.jumbotron h1 {
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 4%;
+}
+
+.jumbotron h2 {
+  font-weight: 600;
+  margin-bottom: 4%;
+}
+
+.jumbotron h4 {
+  font-weight: 500;
+  margin-bottom: 4%;
+}
+
+.jumbotron a {
+  margin-right: 5%;
+  font-weight: 600;
+  margin-top: 4%;
+}
+
+.divButton {
+  width: auto;
+}
+/*# sourceMappingURL=estilosIndex.css.map */

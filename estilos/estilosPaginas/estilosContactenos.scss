@@ -4,16 +4,6 @@
     margin-left: $margin3;
     margin-right: $margin3;
 }
-.card {
-    margin-top: $margin3;
-    i{
-        margin-top: $margin3;
-        font-size:4rem;
-    }
-    span{
-        color: map-get($map: $colors, $key: "secondary");
-    }
-}
 .contContactenos {
     h1,h2,h4,h5,h6{
     font-family: $fontPrincipal;
@@ -30,6 +20,16 @@
     }
     h6{
         font-weight: $fontWeightPrincipal;
+    }
+    .card {
+        margin-top: $margin3;
+        i{
+            margin-top: $margin3;
+            font-size:4rem;
+        }
+        span{
+            color: map-get($map: $colors, $key: "secondary");
+        }
     }
 }
 .buttonSubmit{

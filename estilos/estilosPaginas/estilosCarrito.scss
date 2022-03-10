@@ -41,8 +41,33 @@
         a {
             padding: 0 $margin4;
         }
+        .center-block {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
         .carritoNumero{
             font-family: $fontSecondary;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        input {
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            border-bottom-style: hidden;
+            padding-left: auto;
+        }
+          
+          .no-outline:focus {
+            outline: none;
+          }
+        .updown{
+            font-size: 4rem;
+        }
+        .fa-plus, .carritoNumero, .fa-minus{
+            font-size: 1rem;
         }
         .fa-remove{
             font-size: 1.5rem;
