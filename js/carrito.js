@@ -62,18 +62,6 @@ function subtotalMuestreo(prod){
     console.log("holacristina")
 }
 
-// //function that calculates the subtotal, that is quantity * price of every item
-// function subtotalCost(prod, valor){
-//     if(valor === "delete"){
-//         subtotal -= (prod.precio * prod.cantidad);
-//     }else if(valor === "plus"){
-//         subtotal += parseInt(prod.precio);
-//     }else{
-//         subtotal -= parseInt(prod.precio);
-//     }
-//     localStorage.setItem('subtotalCost',subtotal);
-// }
-
 //function to display the resume of the cart and calculate de total
 function total(){
     console.log("lemght"+productsInCart.length);
@@ -143,6 +131,14 @@ function deleteProduct(prod, indice){
 
     //we remove that element from the html
     removeItem.remove();
+
+    Toastify({
+        text: prod.nombre + " eliminado con éxito",
+        className: "info",
+        style: {
+            background: "linear-gradient(to right, #C84146, #C84146)",
+        }
+    }).showToast();
 
     //calling the subtotal function so it can show the 
     showProducts()

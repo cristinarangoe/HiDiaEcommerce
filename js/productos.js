@@ -74,7 +74,15 @@ function setItem(product){
     //if filtro is not null, we +1
     filtro ? (filtro.cantidad += 1) : cartItem.push(product);
 
-    alert("producto agregado con exito")
+    Toastify({
+        text: product.nombre + " agregado con éxito",
+        className: "info",
+        position: "left",
+        gravity: "bottom",
+        style: {
+            background: "linear-gradient(to right, #475DA7, #5383ba)",
+        }
+    }).showToast();
 
     //now we pass to the local storage the array so it can be saved
     localStorage.setItem('producsInCart',JSON.stringify(cartItem));
