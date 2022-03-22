@@ -1,0 +1,66 @@
+[
+    {
+        "indice": 0,
+        "nombre": "Plato Mexicano",
+        "descripcion": "Este es un bowl mexicano que tiene ingredientes ricos y naturales",
+        "precio": "15000",
+        "cantidad": 1,
+        "imagen": "../img/platoMexicano.png"
+    },
+    {
+        "indice": 1,
+        "nombre": "Nachos",
+        "descripcion": "Nachos hechos con maíz amarillo, 100% natural",
+        "precio": "10000",
+        "cantidad": 1,
+        "imagen": "../img/nachos.jpg"
+    },
+    {
+        "indice": 2,
+        "nombre": "Arepa blanca grande",
+        "descripcion": "Arepas hechas con maiz blanco, naturales y sin conservantes",
+        "precio": "12,000",
+        "cantidad": 1,
+        "imagen": "../img/arepaGrande.jpg"
+    },
+    {
+        "indice": 3,
+        "nombre": "Salsa de guacamole",
+        "descripcion": "Salsa hecha con los mejores agucates colombianos",
+        "precio": "18,000",
+        "cantidad": 1,
+        "imagen": "../img/guacamole.jpg"
+    },
+    {
+        "indice": 4,
+        "nombre": "Arepa de queso mozzarella",
+        "descripcion": "Arepas rellenas de queso mozzarella de la mejor calidad",
+        "precio": "20,000",
+        "cantidad": 1,
+        "imagen": "../img/arepaQueso.jpg"
+    },
+    {
+        "indice": 5,
+        "nombre": "Salsa de pimentón asado",
+        "descripcion": "Salsa de pimentón de la mejor calidad",
+        "precio": "15,000",
+        "cantidad": 1,
+        "imagen": "../img/salsaPimenton.jpg"
+    },
+    {
+        "indice": 6,
+        "nombre": "Arepa blanca pequeña",
+        "descripcion": "Arepas hechas con maiz blanco, naturales y sin conservantes",
+        "precio": "15,000",
+        "cantidad": 1,
+        "imagen": "../img/arepasPequena.jpg"
+    },
+    {
+        "indice": 7,
+        "nombre": "Chorizo de cerdo",
+        "descripcion": "Chorizos hechos con la mejor carne de cerdo",
+        "precio": "15,000",
+        "cantidad": 1,
+        "imagen": "../img/chorizos.jpg"
+    }
+]

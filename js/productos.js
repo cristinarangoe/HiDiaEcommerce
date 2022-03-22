@@ -1,50 +1,96 @@
 
 //INICIO MOSTRAR PRODUCTOS EN PAGINA DE PRODUCTOS
 
-//Creacion de la clase producto con su constructor.
-class Producto {
-    constructor(nombre, descripcion, precio, cantidad, imagen) {
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.precio = precio;
-        this.cantidad = cantidad;
-        this.imagen = imagen;
-    }
+async function obtenerProductos() {
+    const response = await fetch('../json/products.json');
+    return await response.json();
 }
 
-//creacion de los objetos, se van a crear 5 objetos.
-const producto1 = new Producto("Plato Mexicano", "Este es un bowl mexicano que tiene ingredientes ricos y naturales", "15000",1, "../img/platoMexicano.png");
-const producto2 = new Producto("Nachos", "Nachos hechos con maíz amarillo, 100% natural", "10000",1, "../img/nachos.jpg");
-const producto3 = new Producto("Salsa de pimentón", "Carne hecha con ingredientes de la mejor calidad", "18000",1, "../img/salsaPimenton.jpg");
-const producto4 = new Producto("Arepas de queso", "Arepas rellenas de queso mozzarella de la mejor calidad", "8000",1, "../img/arepaQueso.jpg");
-const producto5 = new Producto("Arepas blanca", "Arepas hechas con maiz blanco, naturales y sin conservantes", "5000",1, "../img/arepaGrande.jpg");
-
-//creacion del array con cada uno de los PRODUCTOS, objetos
-const arrayProductos = [producto1, producto2, producto3, producto4, producto5];
+const prods = [];
 
 //llamamos al id del div donde vamos a meter nuestros productos en el HTML
 let productsSection = document.getElementById('productsSection');
 
-//for para ir insertando en el html cada uno de los productos, objetos creados
-arrayProductos.forEach((prod, indice) => {
-    productsSection.innerHTML +=
-        `<div id="prod${indice}" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+obtenerProductos().then(productos => {
+    productos.forEach((prod) => {
+        prods.push(prod);
+        productsSection.innerHTML +=
+        `<div id="prod${prod.indice}" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card text-black">
-                <img id="img${indice}" class="card-img-top" src=${prod.imagen} />
+                <img id="img${prod.indice}" class="card-img-top" src="../img/${prod.imagen}" />
                 <div class="card-body">
                     <div class="">
-                        <h4 id="title${indice}" class="card-title">${prod.nombre}</h4>
+                        <h4 id="title${prod.indice}" class="card-title">${prod.nombre}</h4>
                     </div>
                     <div class="d-flex justify-content-between">
-                        <h5 id="price${indice}">$${prod.precio}</h5>
-                        <button type="button" class="btn btn-azul addToCart" onClick=setItem(arrayProductos[${indice}]);>
+                        <h5 id="price${prod.indice}">$${prod.precio}</h5>
+                        <button type="button" class="btn btn-azul addToCart" onClick=setItem(prods[${prod.indice}]);>
                             <i class="fa fa-cart-plus"></i>
                         </button>
                     </div>
                 </div>
             </div>
         </div>`
-});
+    });
+})
+
+// fetch('../json/products.json')
+// .then(res => res.json())
+// .then(productos => {
+//     productos.forEach((prod) => {
+//         prods.push(prod);
+//     });
+// })
+
+console.log(typeof prods)
+
+// //Creacion de la clase producto con su constructor.
+// class Producto {
+//     constructor(nombre, descripcion, precio, cantidad, imagen) {
+//         this.nombre = nombre;
+//         this.descripcion = descripcion;
+//         this.precio = precio;
+//         this.cantidad = cantidad;
+//         this.imagen = imagen;
+//     }
+// }
+
+// //creacion de los objetos, se van a crear 5 objetos.
+// const producto1 = new Producto("Plato Mexicano", "Este es un bowl mexicano que tiene ingredientes ricos y naturales", "15000",1, "../img/platoMexicano.png");
+// const producto2 = new Producto("Nachos", "Nachos hechos con maíz amarillo, 100% natural", "10000",1, "../img/nachos.jpg");
+// const producto3 = new Producto("Salsa de pimentón", "Carne hecha con ingredientes de la mejor calidad", "18000",1, "../img/salsaPimenton.jpg");
+// const producto4 = new Producto("Arepas de queso", "Arepas rellenas de queso mozzarella de la mejor calidad", "8000",1, "../img/arepaQueso.jpg");
+// const producto5 = new Producto("Arepas blanca", "Arepas hechas con maiz blanco, naturales y sin conservantes", "5000",1, "../img/arepaGrande.jpg");
+
+// //creacion del array con cada uno de los PRODUCTOS, objetos
+// const arrayProductos = [producto1, producto2, producto3, producto4, producto5];
+
+// //llamamos al id del div donde vamos a meter nuestros productos en el HTML
+// let productsSection = document.getElementById('productsSection');
+
+// //for para ir insertando en el html cada uno de los productos, objetos creados
+// prods.forEach((prod, indice) => {
+//     console.log(prod.nombre);
+//     console.log(prods);
+//     console.log(arrayProductos);
+//     productsSection.innerHTML +=
+//         `<div id="prod${indice}" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+//             <div class="card text-black">
+//                 <img id="img${indice}" class="card-img-top" src=${prod.imagen} />
+//                 <div class="card-body">
+//                     <div class="">
+//                         <h4 id="title${indice}" class="card-title">${prod.nombre}</h4>
+//                     </div>
+//                     <div class="d-flex justify-content-between">
+//                         <h5 id="price${indice}">$${prod.precio}</h5>
+//                         <button type="button" class="btn btn-azul addToCart" onClick=setItem(prods[${indice}]);>
+//                             <i class="fa fa-cart-plus"></i>
+//                         </button>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>`
+// }); 
 
 
 //FIN MOSTRAR PRODUCTOS EN PAGINA DE PRODUCTOS
